@@ -1,0 +1,10 @@
+<div class="container-fluid" *ngFor="let kitten of mykittenList">
+    <div class="row">
+        <div class="card" style="width: 18rem ;">
+            <img [src]="kitten.pictureUrl" class="card-img-top" [alt]="kitten.name" width="200">
+            <div class="card-body">
+                <h5 class="card-title">{{ kitten.name }}</h5>
+            </div>
+        </div>
+    </div>
+</div>

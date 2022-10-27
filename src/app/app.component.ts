@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Kittens } from './models/kitten.model';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,15 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'createKitten';
+
+  kittenList: Kittens[] = [];
+  mykittenList: Kittens[] = [];
+
+  addKitten(event: Kittens) {
+    this.kittenList.push(event);
+  }
+
+  addMyKitten(event: Kittens) {
+    this.mykittenList.push(event);
+  }
 }
